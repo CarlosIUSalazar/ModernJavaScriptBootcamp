@@ -42,4 +42,11 @@ const todo = document.querySelector('#todos .todo');
 //Applies or removes the class done to todo.
 // todo.classList.toggle('done')
 
- 
+ //147
+//  const newh2 = document.createElement('h2')
+//  console.dir(newh2)
+//  newh2.innerText = 'I like animals'
+//  newh2.classList.add('special')
+
+//  const section = document.querySelector('section')
+//  section.appendChild(newh2)
