@@ -24,12 +24,22 @@ document.querySelectorAll('li');
 // To find ALL elements with the class of special on the page:
 document.querySelectorAll('.special');
 
-const allLis = document.querySelectorAll('li');
-const colors = ['red','orange','yellow','green','blue','purple']
+// const allLis = document.querySelectorAll('li');
+// const colors = ['red','orange','yellow','green','blue','purple']
 
-allLis.forEach((li,i) => {
-    const color = colors[i];
-    li.style.color = color;
-});
+// allLis.forEach((li,i) => {
+//     const color = colors[i];
+//     li.style.color = color;
+// });
 
 
+const todo = document.querySelector('#todos .todo');
+
+// todo.style.color = 'gray';
+// todo.style.textDecoration = 'line-through';
+// todo.style.opacity = '50%'
+
+//Applies or removes the class done to todo.
+// todo.classList.toggle('done')
+
+ 
