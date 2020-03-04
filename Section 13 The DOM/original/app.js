@@ -23,3 +23,13 @@ document.querySelectorAll('li');
 
 // To find ALL elements with the class of special on the page:
 document.querySelectorAll('.special');
+
+const allLis = document.querySelectorAll('li');
+const colors = ['red','orange','yellow','green','blue','purple']
+
+allLis.forEach((li,i) => {
+    const color = colors[i];
+    li.style.color = color;
+});
+
+
