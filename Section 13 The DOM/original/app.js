@@ -43,6 +43,8 @@ const todo = document.querySelector('#todos .todo');
 // todo.classList.toggle('done')
 
  //147
+
+ // Adding elements to the DOM
 //  const newh2 = document.createElement('h2')
 //  console.dir(newh2)
 //  newh2.innerText = 'I like animals'
@@ -50,3 +52,47 @@ const todo = document.querySelector('#todos .todo');
 
 //  const section = document.querySelector('section')
 //  section.appendChild(newh2)
+
+//Add image
+const newImg = document.createElement('img');
+newImg.src = 'https://i.ytimg.com/vi/7qOFHGcT7ec/maxresdefault.jpg'
+newImg.style.width = "300px"
+
+
+document.body.appendChild(newImg);
+
+//add link
+const newLink = document.createElement('a');
+newLink.innerText = 'Mr Bubz. Video! CLICK MEEE';
+newLink.href = 'https://www.youtube.com/watch?v=JdZDWuGcuCs'
+const firstP = document.querySelector('p');
+firstP.appendChild(newLink);
+
+//148  appendChild, insertAdjacentElement, Append, Prepend
+const parentUl = document.querySelector('ul')
+const newLi = documentCreateElement('li');
+newLi.innerText = "I am a new LI";
+parentUl.appendChild(newLi);
+
+
+const i = document.createElement('i');
+i.innerText = "I AM ITALICS!!";
+const firstP = document.querySelector('p');
+firstP.insertAdjacentElement('beforebegin',i)  //insertAdjacentElement check on MDN it has beforebegin, afterbegin, beforeend, afterend etc.
+
+
+firstP.append(i);
+firstP.append(newLi);
+// you could do firstP.append(i, newLi) to append 2 elements at the same time.  With appendChild you can't append more than 1 at a time.
+
+
+//149 Remove elements
+//removeChild and remove (remove is newer it may not work in IE)
+const ul = document.querySelector('secton ul');
+const removeMe = ul.querySelector('.special');
+const deleted = ul.removeChild(removeMe) //removeChild returns the deleted element so you can save it into a variable
+
+
+//remove doesnt need the parent just the node to delete
+const h1 = document.querySelector('h1')
+h1.remove()
