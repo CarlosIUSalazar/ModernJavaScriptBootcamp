@@ -12,3 +12,4 @@ Array.prototype.pop = function() {
 };
 const nums = [ 6, 7, 8, 9 ];
 nums.pop(); // "SORRY I WANT THAT ELEMENT, I WILL NEVER POP IT OFF!"
+ 
